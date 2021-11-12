@@ -2,7 +2,7 @@
 ## instructions
 
 1. go to your playlist in spotify web app with dev tools open
-2. open all "tracks?offset=..." requests and export items in response to global variable
+2. open all "tracks?offset=..." requests and export ```items``` in response to global variable
 3. in console (replace X with index):
 
 
