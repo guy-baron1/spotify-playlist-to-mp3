@@ -17,4 +17,7 @@
 		"songs": <pasted songs>
 	}
 	```
-5. make sure ffmpeg is installed, pip install and run
+5. make sure python and ffmpeg are installed
+6. pip install and run specifying input json path and output songs dir, for example
+
+``` python main.py --output_dir=C:/path/to/songs/dir/songs --input_path=C:/path\to\songs\input.json ```
