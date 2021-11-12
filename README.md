@@ -10,7 +10,9 @@
 	
 	
 4. paste the result in a json in the following format:
-	{
+
+
+	```{
 		"songs": <pasted songs>
-	}
+	}```
 5. make sure ffmpeg is installed, pip install and run
