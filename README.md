@@ -6,7 +6,7 @@
 3. in console (replace X with index):
 
 
-	tempX.map(song => song.track.name + song.track.artists.map(artist => ` ${artist.name}`))
+	```tempX.map(song => song.track.name + song.track.artists.map(artist => ` ${artist.name}`))```
 	
 	
 4. paste the result in a json in the following format:
