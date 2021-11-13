@@ -25,7 +25,7 @@ def run(args):
 def find_yt_link(query):
 
     words = query.split()
-    search_link = "http://www.youtube.com/results?search_query=" + '+'.join(words)
+    search_link = 'http://www.youtube.com/results?search_query=' + '+'.join(words)
 
     session = HTMLSession()
     search_result = session.get(search_link)
@@ -34,9 +34,9 @@ def find_yt_link(query):
     soup = BeautifulSoup(search_result.html.html, 'lxml')
     videos = soup.find_all('a', class_= 'yt-simple-endpoint style-scope ytd-video-renderer')
     if not videos:
-        raise KeyError("No video found")
+        print(f'No video found for {query}')
 
-    return "https://www.youtube.com" + videos[0]["href"]
+    return 'https://www.youtube.com' + videos[0]['href']
 
 def download_yt_mp3(link, output_dir):
     ydl_opts = {
