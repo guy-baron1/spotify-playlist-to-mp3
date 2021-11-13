@@ -12,7 +12,7 @@ def init_args():
     return parser.parse_args()
 
 def run(args):
-    with open(args.input_path) as songs_json:
+    with open(args.input_path, encoding='utf-8') as songs_json:
         parsed_songs = json.load(songs_json)
         song_count = len(parsed_songs["songs"])
         print(f'Loaded {song_count} songs from input json')
