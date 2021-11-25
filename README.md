@@ -21,3 +21,7 @@
 6. pip install and run, for example:
 
 ``` python main.py --output_dir=C:/path/to/songs/dir/songs --input_path=C:/path/to/songs/input.json ```
+
+
+# TODO
+1. implement retry logic for when youtube blocks us
